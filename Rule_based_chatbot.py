@@ -4,9 +4,9 @@ from colorama import Fore, init
 init(autoreset=True)
 
 destinations = {
-    "Beaches" : ["Bali","Maldives","Phuket"],
-    "Mountains": ["Swiss Alps","Rocky mountains","Himalayas"],
-    "Cities": ["Tokyo","Paris","New York"]
+    "beaches" : ["Bali","Maldives","Phuket"],
+    "mountains": ["Swiss Alps","Rocky mountains","Himalayas"],
+    "cities": ["Tokyo","Paris","New York"]
 }
 
 jokes = [
@@ -24,11 +24,10 @@ def recommend():
     print(f"{Fore.CYAN} TravelBot: Beaches, Mountains, or cities?")
     preference = input(Fore.YELLOW + "You: ")
     preference = normalize_input(preference)
-
     if preference in destinations:
         suggestion = random.choice(destinations[preference])
         print(Fore.GREEN + f"TravelBot : How about {suggestion}")
-        print(f"{Fore.CYAN} TravelBot: Do you like it? (Yes/No)")
+        print(f"{Fore.CYAN}TravelBot: Do you like it? (Yes/No)")
         answer = input(Fore.YELLOW + "You :").lower()
 
         if answer == "yes":
