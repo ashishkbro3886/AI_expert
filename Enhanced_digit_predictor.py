@@ -2,7 +2,7 @@
 
 # from tensorflow.keras import layers, models
 
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 # from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
